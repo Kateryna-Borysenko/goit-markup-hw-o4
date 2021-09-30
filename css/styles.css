@@ -126,14 +126,29 @@ ul {
 .contacts .link:focus {
   color: var(--accent-color);
 }
+.contacts .icon:hover {
+  fill: var(--accent-color);
+}
 .site-nav .link.current {
   color: var(--accent-color);
 }
 .contacts {
   display: flex;
 }
+.contacts .list {
+  display: flex;
+  align-items: center;
+}
+
 .contacts .link {
   color: var(--primary-text-color);
+}
+
+.contacts .icon {
+  fill: var(--primary-text-color);
+}
+.contacts .thumb {
+  margin-right: 10px;
 }
 
 /* - - - - - PAGE-INDEX - - - - - */
