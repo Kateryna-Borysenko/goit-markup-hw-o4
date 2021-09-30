@@ -19,6 +19,18 @@
   --accent-font-family: "Raleway";
 }
 
+/* - - - - - to hide heading - - - - - */
+.visually-hidden {   
+    position: absolute;   
+    width: 1px;   
+    height: 1px;   
+    margin: -1px;   
+    padding: 0;   
+    overflow: hidden;   
+    border: 0;   
+    clip: rect(0 0 0 0); 
+}
+
 /* - - - - - MY RESET - - - - - */
 html {
   box-sizing: border-box;
@@ -179,6 +191,15 @@ ul {
 .advantages .list {
   width: 23%;
 }
+.advantages .thumb {
+  border:transparent;
+  border-radius: 4px;
+  padding: 25px 0;
+  margin-bottom: 30px;
+
+  background-color: var(--gray-bg-color);
+  text-align: center;
+}
 .advantages .description {
   font-size: 14px;
   line-height: 1.71;
@@ -251,7 +272,6 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-
 .what-we-do {
   padding-top: 0;
 }
