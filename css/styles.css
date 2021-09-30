@@ -17,6 +17,8 @@
 
   --primary-font-family: "Roboto";
   --accent-font-family: "Raleway";
+
+  --icon-color:#AFB1B8;
 }
 
 /* - - - - - to hide heading - - - - - */
@@ -260,6 +262,9 @@ ul {
 .team {
   background-color: var(--gray-bg-color);
 }
+.team .position-item:not(:last-child){
+  margin-right: 30px;
+}
 .team .box {
   display: flex;
   text-align: center;
@@ -273,7 +278,7 @@ ul {
   box-shadow: var(--card-shadow);
 }
 .team-content {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 .position-item .list-title {
   font-weight: 500;
@@ -286,7 +291,34 @@ ul {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
+.team .socials{
+  display: flex;
+  justify-content: space-between;
+  outline: #2196f3 solid 1px; 
+}
+.socials .link{
+  display: block;
+  /* outline: springgreen solid 1px; */
+  width: 44px;
+  height: 44px;
+  padding-top:10px;
+  /* не смогла выровнять по центру */
+}
+
+.socials .icon {
+  fill: var(--icon-color);
+} 
+.socials .icon:hover {
+  fill: var(--white-color);
+} 
+
+.socials .link:hover{
+  background-color: var(--accent-color);
+  border-radius: 50%; 
+}
+
 .what-we-do {
   padding-top: 0;
 }
