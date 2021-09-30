@@ -18,19 +18,19 @@
   --primary-font-family: "Roboto";
   --accent-font-family: "Raleway";
 
-  --icon-color:#AFB1B8;
+  --icon-color: #afb1b8;
 }
 
 /* - - - - - to hide heading - - - - - */
-.visually-hidden {   
-    position: absolute;   
-    width: 1px;   
-    height: 1px;   
-    margin: -1px;   
-    padding: 0;   
-    overflow: hidden;   
-    border: 0;   
-    clip: rect(0 0 0 0); 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* - - - - - MY RESET - - - - - */
@@ -209,7 +209,7 @@ ul {
   width: 23%;
 }
 .advantages .thumb {
-  border:transparent;
+  border: transparent;
   border-radius: 4px;
   padding: 25px 0;
   margin-bottom: 30px;
@@ -258,11 +258,18 @@ ul {
 .works .list.list:not(:last-child) {
   margin-right: 30px;
 }
+.what-we-do {
+  padding-top: 0;
+}
 
+.what-we-do .box {
+  display: flex;
+  justify-content: space-between;
+}
 .team {
   background-color: var(--gray-bg-color);
 }
-.team .position-item:not(:last-child){
+.team .position-item:not(:last-child) {
   margin-right: 30px;
 }
 .team .box {
@@ -293,41 +300,55 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
-.team .socials{
+.team .socials {
   display: flex;
   justify-content: space-between;
-  outline: #2196f3 solid 1px; 
+  outline: #2196f3 solid 1px;
 }
-.socials .link{
+.socials .link {
   display: block;
   /* outline: springgreen solid 1px; */
   width: 44px;
   height: 44px;
-  padding-top:10px;
+  padding-top: 10px;
   /* не смогла выровнять по центру */
 }
 
 .socials .icon {
   fill: var(--icon-color);
-} 
+}
 .socials .icon:hover {
   fill: var(--white-color);
-} 
+}
 
-.socials .link:hover{
+.socials .link:hover {
   background-color: var(--accent-color);
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
-.what-we-do {
-  padding-top: 0;
-}
-
-.what-we-do .box {
+.customer-list {
   display: flex;
   justify-content: space-between;
 }
-
+.customers .link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  text-align: center;
+  padding: 16px 0;
+  /* не смогла выровнять по вертикали */
+}
+.customers .link:hover {
+  border-color: var(--accent-color);
+}
+.customers .icon {
+  fill: var(--icon-color);
+}
+.customers .icon:hover {
+  fill: var(--accent-color);
+}
 /* - - - - - FOOTER - - - - - */
 .page-footer {
   padding: 60px 0;
