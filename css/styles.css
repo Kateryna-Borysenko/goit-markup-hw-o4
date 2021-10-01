@@ -10,6 +10,7 @@
   --gray-bg-color: #f5f4fa;
   --border-color: #ececec;
   --card-border-color: #eeeeee;
+  --btn-hover: #188ce8;
 
   --card-set-gap: 30px;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -128,9 +129,12 @@ ul {
 .contacts .link:focus {
   color: var(--accent-color);
 }
-.contacts .icon:hover {
-  fill: var(--accent-color);
+
+.contacts .link:hover .icon,
+.contacts .link:focus .icon {
+ fill: var(--accent-color);
 }
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -242,8 +246,7 @@ ul {
 }
 .button.primary:focus,
 .button.primary:hover {
-  color: var(--title-text-color);
-  background-color: var(--gray-bg-color);
+  background-color: var(--btn-hover);
 }
 .section-title {
   margin-top: 0;
@@ -306,9 +309,11 @@ ul {
 }
 .socials .link {
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
 }
 .socials .item:not(:last-child) {
   margin-right: 10px;
@@ -317,13 +322,15 @@ ul {
 .socials .icon {
   fill: var(--icon-color);
 }
-.socials .icon:hover {
-  fill: var(--white-color);
-}
 
-.socials .link:hover {
+.socials .link:hover,
+.socials .link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+.socials .link:hover .icon,
+.socials .link:focus .icon {
+  fill: var(--white-color);
 }
 
 .customer-list {
@@ -333,22 +340,28 @@ ul {
 
 .customers .link {
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  text-align: center;
-  padding: 16px 0;
-}
-.customers .link:hover {
-  border-color: var(--accent-color);
 }
 .customers .icon {
   fill: var(--icon-color);
 }
-.customers .icon:hover {
-  fill: var(--accent-color);
+
+.customers .link:hover,
+.customers .link:focus {
+  border-color: var(--accent-color);
 }
+
+.customers .link:hover .icon,
+.customers .link:focus .icon {
+   fill: var(--accent-color);
+}
+ 
 /* - - - - - FOOTER - - - - - */
 .page-footer {
   padding: 60px 0;
@@ -405,6 +418,9 @@ ul {
 
 .page-footer .socials {
   display: flex;
+}
+.page-footer .icon {
+  fill:var(--white-color);
 }
 .page-footer .socials .link {
   background-color: rgba(255, 255, 255, 0.1);
